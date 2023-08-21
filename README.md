@@ -1,2 +1,3 @@
-# bookbot
-boot.dev portfolio project
+# BookBot
+
+BookBot is my first boot.dev portfolio project
