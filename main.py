@@ -25,7 +25,7 @@ def count_characters(text):
     return char_count
 
 def get_chars_sorted(characters):
-    return sorted(characters.items(), key=lambda item: item[1])
+    return sorted(characters.items(), key=lambda item: item[1], reverse=True)
 
 def create_report(path, words, characters):
     sorted_list = get_chars_sorted(characters)
@@ -33,7 +33,7 @@ def create_report(path, words, characters):
     print(f"--- Begin report of {path} ---")
     print(f"{words} words where found in the document \n")
 
-    for char in sorted_list[::-1]:
+    for char in sorted_list:
         if char[0].isalpha():
             print(f"the {char[0]} character appears {char[1]} times")
 
