@@ -2,7 +2,7 @@ def main():
     book_path = "./books/frankenstein.txt"
     book_content = get_book_content(book_path)
     word_count = count_words(book_content)
-    print(f"Word count: {word_count}")
+    char_count = count_chars(book_content)
 
 
 def get_book_content(path):
@@ -12,6 +12,11 @@ def get_book_content(path):
 
 def count_words(content):
     return len(content.split())
+
+
+def count_chars(content):
+    for char in content:
+        print(char)
 
 
 main()
